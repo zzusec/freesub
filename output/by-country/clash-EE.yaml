@@ -13,8 +13,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: 94.183.170.135
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   server: 94.183.170.135
   port: 8443
@@ -26,7 +24,7 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: chrome
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  server: 217.60.182.79
+  server: 31.76.71.63
   port: 443
   udp: true
   type: hysteria2
