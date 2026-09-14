@@ -25,7 +25,7 @@ proxies:
     public-key: 1P58ZYmo81kPDnL4U7SnEUA-aT2R86l-o6dbFXoeDjc
     short-id: 0a9bd9db19578964
   servername: www.tesla.com
-  client-fingerprint: chrome
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
