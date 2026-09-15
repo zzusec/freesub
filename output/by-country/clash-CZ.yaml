@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇬 KG 01 - xiaohe
-  server: 172.67.67.178
+- name: 🇨🇿 捷克 (Czech) 01 - xiaohe
+  server: 104.21.96.1
   port: 443
   udp: true
   type: vless
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  uuid: 0836463b-214f-4af6-aa85-85a56a62388e
   tls: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
-  skip-cert-verify: true
+  servername: D2127A49-Flat-WOoD-c4b5.Milia-AKbaRpOor.workers.Dev
+  skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /
     headers:
-      Host: rayan-007.nastaran.dpdns.org
+      Host: D2127A49-Flat-WOoD-c4b5.Milia-AKbaRpOor.workers.Dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇬 KG 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇬 KG 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 01 - xiaohe
 rules:
 - MATCH,PROXIES
