@@ -4,12 +4,12 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇭 泰国 (Thailand) 01 - xiaohe
-  server: 119.46.51.45
-  port: 37515
+- name: 🇸🇬 新加坡 (Singapore) 01 (家宽) - xiaohe
+  server: 124.151.45.60
+  port: 38320
   udp: true
   type: vmess
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  uuid: d643d6ea-2e48-4ad5-b96e-d11b889cc6a6
   alterId: 0
   cipher: auto
 proxy-groups:
@@ -17,12 +17,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇭 泰国 (Thailand) 01 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇭 泰国 (Thailand) 01 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
