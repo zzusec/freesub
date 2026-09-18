@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇶 IQ 01 - xiaohe
-  server: 172.67.141.75
-  port: 443
+- name: 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
+  server: 203.137.165.164
+  port: 57554
   udp: true
   type: vless
-  uuid: de78c0b1-c5c8-412a-bd92-430d1f2e2642
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: FroSTy-PonD-7436.SHHabbYAt914.woRkErS.dEv
+  servername: cdn8848.776676.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /NmrU9ImDG7jA7oFEem
+    path: /p/docs/soft?ed=2560
     headers:
-      Host: frosty-pond-7436.shhabbyat914.workers.dev
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇶 IQ 01 - xiaohe
+  - 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇶 IQ 01 - xiaohe
+  - 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

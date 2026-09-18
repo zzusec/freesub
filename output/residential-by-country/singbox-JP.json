@@ -5,17 +5,14 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇶 IQ 01 - xiaohe",
-      "server": "172.67.141.75",
-      "server_port": 443,
-      "uuid": "de78c0b1-c5c8-412a-bd92-430d1f2e2642",
+      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe",
+      "server": "203.137.165.164",
+      "server_port": 57554,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "FroSTy-PonD-7436.SHHabbYAt914.woRkErS.dEv",
+        "server_name": "cdn8848.776676.xyz",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -23,9 +20,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/NmrU9ImDG7jA7oFEem",
+        "path": "/p/docs/soft?ed=2560",
         "headers": {
-          "Host": "frosty-pond-7436.shhabbyat914.workers.dev"
+          "Host": "cdn8848.776676.xyz"
         }
       }
     },
@@ -34,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - xiaohe"
+        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - xiaohe"
+        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
