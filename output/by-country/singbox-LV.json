@@ -4,25 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
-      "server": "sql.popmintxo.cc",
-      "server_port": 443,
-      "uuid": "d806a58b-33aa-42e0-b170-395e49c16b37",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Y0noOXC8qHmbM0GmDpj-9BBwKSOtHs-uMbNfKU050GQ",
-          "short_id": "b558b9305a0b"
-        }
-      }
+      "server": "185.135.86.175",
+      "server_port": 9082,
+      "method": "aes-256-cfb",
+      "password": "45xgMgm386pjWjTx"
     },
     {
       "type": "selector",

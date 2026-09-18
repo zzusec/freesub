@@ -5,18 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
-  server: sql.popmintxo.cc
-  port: 443
+  server: 185.135.86.175
+  port: 9082
   udp: true
-  type: vless
-  uuid: d806a58b-33aa-42e0-b170-395e49c16b37
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Y0noOXC8qHmbM0GmDpj-9BBwKSOtHs-uMbNfKU050GQ
-    short-id: b558b9305a0b
-  servername: www.microsoft.com
-  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-cfb
+  password: 45xgMgm386pjWjTx
 proxy-groups:
 - name: PROXIES
   type: select
