@@ -5,20 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 45.130.125.207
-  port: 8443
+  server: 194.87.59.104
+  port: 2085
   udp: true
   type: vless
-  uuid: 31aa0950-eb19-45ff-94a2-af416deb3b90
-  tls: true
-  servername: SquarE-saLaD-EbDe.ZDFGVcCfgUUYgGG.wOrKeRS.DEV
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiZm5INktPV0lGcHI1NjNSOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: square-salad-ebde.zdfgvccfguuyggg.workers.dev
+  uuid: 7b07d862-b698-47c1-884b-3e7dd6c8b862
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 - name: 🇨🇿 捷克 (Czech) 02 - xiaohe
   server: 194.87.59.13
   port: 2085
@@ -28,6 +22,20 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vless
+- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
+  server: 64.225.110.247
+  port: 2083
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /acg/buy/ajax
+    headers:
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,6 +43,7 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
+  - 🇨🇿 捷克 (Czech) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -42,5 +51,6 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
+  - 🇨🇿 捷克 (Czech) 03 - xiaohe
 rules:
 - MATCH,PROXIES
