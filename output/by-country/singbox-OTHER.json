@@ -6,7 +6,7 @@
     {
       "type": "trojan",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "162.159.244.91",
+      "server": "104.18.9.83",
       "server_port": 443,
       "password": "humanity",
       "tls": {
