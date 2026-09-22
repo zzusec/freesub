@@ -5,18 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇳🇴 挪威 (Norway) 01 - xiaohe",
-      "server": "31.76.5.124",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
+      "server": "ttszhrmghgdssbkqf.cfooov.xyz",
+      "server_port": 42241,
+      "uuid": "55848813-689e-4a39-82cf-00748cbc7289",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "norway-2.failspace.top",
-        "insecure": true,
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "lFZuIsmEomT8zwJ2f7wTI-C87oA78R9amDVHgemYmmQ",
+          "short_id": "1cb574e4d5d8"
         }
       }
     },
@@ -25,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇴 挪威 (Norway) 01 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇴 挪威 (Norway) 01 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
