@@ -5,29 +5,11 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 93.190.9.35
-  port: 3090
-  udp: true
-  type: vless
-  uuid: b55a33d7-83ee-416a-971e-eaaa0c928043
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: 93.190.9.59
-  port: 3090
-  udp: true
-  type: vless
-  uuid: 8ac4b519-287e-4ac0-8c95-4c1721c1ab76
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   server: 93.190.9.52
   port: 3090
   udp: true
   type: vless
-  uuid: 5e3ae3d6-2c4d-4b47-a7b0-420d1605f3fa
+  uuid: 52e8bce3-b255-486d-beb2-aa1b549c44b1
   network: grpc
   grpc-opts:
     grpc-service-name: vless
@@ -37,15 +19,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
 rules:
 - MATCH,PROXIES

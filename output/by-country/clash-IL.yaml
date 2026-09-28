@@ -29,7 +29,7 @@ proxies:
     public-key: r4Dp3mztZaizbDk28rEOkLikk7erR9dzzc-Jrsgraho
     short-id: a1b2c3d4
   servername: store.steampowered.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇮🇱 以色列 (Israel) 03 - xiaohe
   server: 31.57.185.82
   port: 41770
@@ -49,7 +49,7 @@ proxies:
     public-key: tLWqTzKtCCMxxOzSskvSwDB2an1bxxZ706kcNDqGNWg
     short-id: 50ace5ab34f6df9b
   servername: de2.dzvn.space
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
