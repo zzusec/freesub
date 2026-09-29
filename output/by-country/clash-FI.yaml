@@ -17,6 +17,12 @@ proxies:
   servername: www.google.com
   client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  server: smart.avenone.ir
+  port: 1085
+  udp: true
+  type: vless
+  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   server: 65.109.199.174
   port: 443
   udp: true
@@ -29,25 +35,7 @@ proxies:
     short-id: 7a0300af51a1c4cf
   servername: Miro.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 185.79.138.71
-  port: 448
-  udp: true
-  type: vless
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  tls: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-    short-id: cd21e552537c7c0b
-  servername: www.samsung.com
-  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: smart.avenone.ir
-  port: 1085
-  udp: true
-  type: vless
-  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
   server: 45.149.147.97
   port: 443
   udp: true
@@ -60,15 +48,18 @@ proxies:
     short-id: d345ad4657adeef9
   servername: google.com
   client-fingerprint: ''
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  server: 65.109.249.114
-  port: 80
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  server: 185.79.138.71
+  port: 448
   udp: true
   type: vless
-  uuid: 794990ea-dc34-4eff-8a43-020a92fec381
-  network: ws
-  ws-opts:
-    path: /
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  tls: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+    short-id: cd21e552537c7c0b
+  servername: www.samsung.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -79,7 +70,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -90,6 +80,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
 rules:
 - MATCH,PROXIES
