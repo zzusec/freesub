@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 172.64.150.28
+  server: 8.47.69.0
   port: 443
   udp: true
   type: trojan
   password: humanity
-  sni: www.calmlunch.com
+  sni: www.pleadcourt.org
   skip-cert-verify: false
   network: ws
   ws-opts:
