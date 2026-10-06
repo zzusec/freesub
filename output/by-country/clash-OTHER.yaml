@@ -13,6 +13,7 @@ proxies:
   tls: true
   servername: aaa.abcai.online
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /vless-argofp=chrome
