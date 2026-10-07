@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: www.speedtest.net
-  port: 443
-  udp: true
-  type: trojan
-  password: pjg&JybcgFsca,+gQMa
-  sni: 022XW1DMCzG0c6165Pcla6.toMBoRn69.woRKeRs.DEV
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tr/4jPX74py1Uh20tnk6uozVTHIZXVMMP?ed=2560
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
   server: cz.h2.cleanersaz.help
   port: 443
   udp: true
@@ -29,13 +18,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
-  - 🇨🇿 捷克 (Czech) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
-  - 🇨🇿 捷克 (Czech) 02 - xiaohe
 rules:
 - MATCH,PROXIES
